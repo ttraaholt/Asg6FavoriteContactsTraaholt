@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Asg6FavoriteContacts</string>
+    <string name="_715_292_5525">715-292-5525</string>
+    <string name="_111_111_1111">111-111-1111</string>
+    <string name="_222_222_2222">222-222-2222</string>
+    <string name="bob">Bob:</string>
+    <string name="contacts">Contacts</string>
+    <string name="frank">Frank:</string>
+    <string name="say_hi">Say hi</string>
+    <string name="call">call</string>
+    <string name="tommy">Tommy:</string>
+</resources>
