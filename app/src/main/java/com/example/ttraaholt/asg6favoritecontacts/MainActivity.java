@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("smsto:7152925525"));  // This ensures only SMS apps respond
+                intent.setData(Uri.parse("smsto:" + "7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("smsto:7152925525"));  // This ensures only SMS apps respond
+                intent.setData(Uri.parse("smsto:" + "7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
