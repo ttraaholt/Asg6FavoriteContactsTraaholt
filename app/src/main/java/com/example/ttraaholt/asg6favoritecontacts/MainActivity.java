@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         btnText1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("smsto:" + "7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         btnText2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("smsto:7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         btnText3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("smsto:7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
