@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setupButtonClickEvents();
     }
 //Create a method that sets up the button click events. 3 call events, and 3 text events
     private void setupButtonClickEvents() {
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setData(Uri.parse("smsto:7152925525"));  // This ensures only SMS apps respond
+                intent.setData(Uri.parse("smsto:" + "7152925525"));  // This ensures only SMS apps respond
                 intent.putExtra("sms_body", "Hi");
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
